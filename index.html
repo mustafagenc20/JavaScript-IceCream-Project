@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body class="myBody">
+    <div class="header">
+      <h1>Mustafa's Ice-Cream World</h1>
+      <img class="heroImage" src="./images/heroImage.jpg" alt="" />
+    </div>
+
+    <h1 class="header1">Ice Cream Configurator</h1>
+
+    <form action="#">
+      <h3 class="header2">Choose your flavours!</h3>
+      <div class="flavours">
+        <button class="hiddenButton" type="hidden" name="pressed"></button>
+        <br />
+        <br />
+        <br />
+        <!-- Flavour 1 -->
+        <div class="flavour">
+          <h4>Vanilla</h4>
+          <button
+            id="button1"
+            type="button"
+            value="picture1"
+            onclick="flavours(this)"
+          ></button>
+          <label for="vanilla">Aantal bollen Vanilla:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            value="0"
+            class="qty"
+            id="qty_vanilla"
+          />
+          <br />
+          <label for="vanilla"> Prijs Vanilla: </label>
+          <input type="number" readonly value="0" id="price_vanilla" /><br />
+        </div>
+        <!-- Flavour 2 -->
+        <div class="flavour">
+          <h4>Chocolate</h4>
+          <button
+            id="button2"
+            type="button"
+            value="picture2"
+            onclick="flavours(this)"
+          ></button>
+          <label for="chocolate">Aantal bollen Chocolate:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            value="0"
+            class="qty"
+            id="qty_chocolate"
+          /><br />
+          <label for="chocolate"> Prijs Chocolate:</label>
+          <input type="number" readonly value="0" id="price_chocolate" /><br />
+        </div>
+        <!-- Flavour 3 -->
+        <div class="flavour">
+          <h4>Lemon</h4>
+          <button
+            id="button3"
+            type="button"
+            value="picture3"
+            onclick="flavours(this)"
+          ></button>
+          <label for="lemon">Aantal bollen Lemon:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            class="qty"
+            value="0"
+            id="qty_lemon"
+          /><br />
+          <label for="lemon"> Prijs Lemon:</label>
+          <input type="number" readonly value="0" id="price_lemon" /><br />
+          <br />
+        </div>
+        <!-- Flavour 4 -->
+        <div class="flavour">
+          <h4>Blueberry</h4>
+          <button
+            id="button4"
+            type="button"
+            value="picture4"
+            onclick="flavours(this)"
+          ></button>
+          <label for="blueberry">Aantal bollen Blueberry:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            class="qty"
+            value="0"
+            id="qty_blueberry"
+          /><br />
+          <label for="blueberry"> Prijs Blueberry:</label>
+          <input type="number" readonly value="0" id="price_blueberry" /><br />
+          <br />
+        </div>
+        <!-- Flavour 5 -->
+        <div class="flavour">
+          <h4>Cherry</h4>
+          <button
+            id="button5"
+            type="button"
+            value="picture5"
+            onclick="flavours(this)"
+          ></button>
+          <label for="cherry">Aantal bollen Cherry:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            class="qty"
+            value="0"
+            id="qty_cherry"
+          /><br />
+          <label for="cherry"> Prijs Cherry:</label>
+          <input type="number" readonly value="0" id="price_cherry" /><br />
+          <br />
+        </div>
+        <!-- Flavour 6 -->
+        <div class="flavour">
+          <h4>Strawberry</h4>
+          <button
+            id="button6"
+            type="button"
+            value="picture6"
+            onclick="flavours(this)"
+          ></button>
+          <label for="strawberry">Aantal bollen Strawberry:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            class="qty"
+            value="0"
+            id="qty_strawberry"
+          /><br />
+          <label for="strawberry"> Prijs Strawberry:</label>
+          <input type="number" readonly value="0" id="price_strawberry" /><br />
+          <br />
+        </div>
+        <!-- Flavour 7 -->
+        <div class="flavour">
+          <h4>Mango</h4>
+          <button
+            id="button7"
+            type="button"
+            value="picture7"
+            onclick="flavours(this)"
+          ></button>
+          <label for="mango">Aantal bollen Mango:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            class="qty"
+            value="0"
+            id="qty_mango"
+          /><br />
+          <label for="mango"> Prijs Mango:</label>
+          <input type="number" readonly value="0" id="price_mango" /><br />
+          <br />
+        </div>
+        <!-- Flavour 8 -->
+        <div class="flavour">
+          <h4>Caramel</h4>
+          <button
+            id="button8"
+            type="button"
+            value="picture8"
+            onclick="flavours(this)"
+          ></button>
+          <label for="caramel">Aantal bollen Caramel:</label>
+          <input
+            type="number"
+            min="0"
+            max="3"
+            class="qty"
+            value="0"
+            id="qty_caramel"
+          /><br />
+          <label for="caramel"> Prijs Caramel:</label>
+          <input type="number" readonly value="0" id="price_caramel" /><br />
+          <br />
+        </div>
+        <!-- Flovour END -->
+      </div>
+      <br />
+      <br />
+      <div class="total-val">
+        <span id="total_value">Totaal </span>
+        <input type="number" readonly value="0" id="price_caramel" /><br />
+      </div>
+      <br />
+      <br /><br />
+      <!-- <input type="reset" />
+      <input type="submit" /> -->
+      <button type="button" class="btn btn-danger">Reset</button>
+      <button type="button" class="btn btn-primary">Confirm</button>
+    </form>
+
+    <script type="text/javascript" src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<!-- Main
+      <div class="container">
+        <div class="row d-block">
+          <div class="col">
+            <div class="card" style="width: 20rem">
+              <img
+                class="card-img-top"
+                src="./images/1.png"
+                alt="Card image cap"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Vanilla</h4>
+                <p class="card-text">Price: €0.75</p>
+                <a
+                  href="#"
+                  data-name="Orange"
+                  data-price="0.75"
+                  class="add-to-cart btn btn-primary"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 20rem">
+              <img
+                class="card-img-top"
+                src="./images/2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Chocolate</h4>
+                <p class="card-text">Price: €0.75</p>
+                <a
+                  href="#"
+                  data-name="Banana"
+                  data-price="0.75"
+                  class="add-to-cart btn btn-primary"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 20rem">
+              <img
+                class="card-img-top"
+                src="./images/3.png"
+                alt="Card image cap"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Lemon</h4>
+                <p class="card-text">Price: €0.75</p>
+                <a
+                  href="#"
+                  data-name="Lemon"
+                  data-price="0.75"
+                  class="add-to-cart btn btn-primary"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+<!-- <input type="checkbox" name="vanilla" id="vanilla" />
+      <img src="./images/1.png" alt="" />
+      <p>Chocolate</p>
+      <input type="checkbox" name="vanilla" id="vanilla" />
+      <p>Pistache</p>
+      <input type="checkbox" name="vanilla" id="vanilla" />
+      <p>Vanilla</p>
+      <input type="checkbox" name="vanilla" id="vanilla" />
+      <p>Vanilla</p>
+      <input type="checkbox" name="vanilla" id="vanilla" />
+      <p>Vanilla</p>
+      <input type="checkbox" name="vanilla" id="vanilla" /> -->
+
+<!-- How many balls you like?
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select> -->
+
+<!-- <br />
+      <h3>Cone or Bowl?</h3>
+      <br />
+      Cone
+      <input type="radio" name="type" value="cone" />
+
+      Bowl
+      <input type="radio" name="type" value="bowl" /> -->

@@ -1,0 +1,40 @@
+body {
+  background-color: moccasin;
+  background-image: url("i4AllLogo.gif");
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: 8em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 2em 1em 1em;
+  text-align: center;
+  color: saddlebrown;
+}
+
+#flavors {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  width: 40%;
+  border-collapse: collapse;
+}
+#flavors td,
+#flavors th {
+  font-size: 1em;
+  border: 1px solid #98bf21;
+  text-align: left;
+  padding-left: 1em;
+}
+#flavors th {
+  font-size: 1.1em;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  background-color: #a7c942;
+  color: #ffffff;
+}
+#flavors tr.alt td {
+  color: #000000;
+  background-color: #eaf2d3;
+}
